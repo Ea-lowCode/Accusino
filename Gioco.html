@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accusino</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-recap">
+            <p class="body-L">Riepilogo partita</p>
+            <span class="material-icons" id="info-icon">info</span>
+        </div>
+
+        <div class="card" id="game-table-1">
+            <h1>Mano 1</h1>
+                <div class="grid-container">
+                    <p class="label-S"> Giocatori</p>
+                    <p class="label-S center"> Dichiarate</p>
+                    <p class="label-S center"> Prese</p>
+                    <p class="label-S center"> Punti</p>
+                </div>
+                <div class="grid-container input-game">
+                    <p class="body-L" id="player1">Nome giocatore</p>
+                    <input type="number" placeholder="D" class="number" min="0">
+                    <input type="number" placeholder="P" class="number" min="0">
+                    <div class="number-readonly">- -</div>
+                </div>
+                <div class="grid-container input-game">
+                    <p class="body-L" id="player2">Nome giocatore</p>
+                    <input type="number" placeholder="D" class="number" min="0">
+                    <input type="number" placeholder="P" class="number" min="0">
+                    <div class="number-readonly">- -</div>
+                </div>
+                <div class="grid-container input-game">
+                    <p class="body-L" id="player3">Nome giocatore</p>
+                    <input type="number" placeholder="D" class="number" min="0">
+                    <input type="number" placeholder="P" class="number" min="0">
+                    <div class="number-readonly">- -</div>
+                </div>
+
+                <div class="grid-container input-game">
+                    <p class="body-L" id="player4">Nome giocatore</p>
+                    <input type="number" placeholder="D" class="number" min="0">
+                    <input type="number" placeholder="P" class="number" min="0">
+                    <div class="number-readonly">- -</div>
+                </div>
+                <div class="grid-container input-game">
+                    <p class="body-L" id="player5">Nome giocatore</p>
+                    <input type="number" placeholder="D" class="number" min="0">
+                    <input type="number" placeholder="P" class="number" min="0">
+                    <div class="number-readonly">- -</div>
+                </div>
+                <div class="error-feedback">
+                <span class="material-icons error">error</span>
+                <p>Almeno un giocatore deve sbagliare</p>
+                </div>
+                
+                <a class="margin-top-16 button-disabled" id="next-step-button">Avanti</a>
+        </div>
+    </div>
+
+    <script src="Script2.js"></script>
+
+</body>
+
+</html>
