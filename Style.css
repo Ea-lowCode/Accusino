@@ -41,11 +41,12 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--gray-lightest);
     padding: 32px;
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
 }
 
 h1 {
@@ -190,6 +191,7 @@ input::placeholder {
     gap: 16px;
     width: 100%;
     align-items: center;
+    justify-content: center;
 }
 
 .grid-container {
@@ -198,6 +200,14 @@ input::placeholder {
     gap: 8px;
     align-items: center;
 }
+
+.grid-container-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
 
 .number-readonly{
     color: var(--gray-darkest);
